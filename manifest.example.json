@@ -1,0 +1,18 @@
+{
+  "posters": [
+    {
+      "poster": "posters/example.jpg",
+      "cast": "cast.example.json",
+      "faces": [
+        {
+          "bbox": [820, 410, 1010, 640],
+          "cast_id": "c_01"
+        },
+        {
+          "bbox": [120, 900, 240, 1040],
+          "cast_id": null
+        }
+      ]
+    }
+  ]
+}

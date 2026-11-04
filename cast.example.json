@@ -1,0 +1,30 @@
+{
+  "name": "示例剧",
+  "members": [
+    {
+      "cast_id": "c_01",
+      "name": "演员A",
+      "role": "角色A",
+      "portrait_paths": [
+        "portraits/a_01.jpg",
+        "portraits/a_02.jpg"
+      ]
+    },
+    {
+      "cast_id": "c_02",
+      "name": "演员B",
+      "role": "角色B",
+      "portrait_paths": [
+        "portraits/b_01.jpg"
+      ]
+    },
+    {
+      "cast_id": "c_03",
+      "name": "演员C",
+      "role": "角色C",
+      "portrait_paths": [
+        "portraits/c_01.jpg"
+      ]
+    }
+  ]
+}

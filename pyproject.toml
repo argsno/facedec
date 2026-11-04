@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facedec"
+version = "0.1.0"
+description = "CPU-only poster cast identification feasibility harness"
+requires-python = ">=3.10"
+dependencies = [
+    "insightface>=0.7.3",
+    "onnxruntime>=1.17",
+    "opencv-python>=4.8",
+    "numpy>=1.24",
+    "Pillow>=10.0",
+    "scipy>=1.11",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "pydantic>=2.6",
+    "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "scikit-image>=0.22",
+]
+
+[project.scripts]
+facedec = "facedec.cli:main"
+facedec-eval = "facedec.evaluate:main"
+
+[tool.setuptools.packages.find]
+include = ["facedec*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: tests that load the face models or download model weights",
+]
